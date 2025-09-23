@@ -29,7 +29,7 @@ void MyPlugin::initPlugin(qt_gui_cpp::PluginContext &context) {
   context.addWidget(widget_);
 
   ui_.rateSpinBox->setValue(100);
-  ui_.topicLineEdit->setText("/dbus_data");
+  ui_.topicLineEdit->setText("/rm_ecat_hw/dbus");
   topic_name_ = ui_.topicLineEdit->text();
   joy_stick_left_ = new JoyStick(ui_.joy);
   joy_stick_right_ = new JoyStick(ui_.joy_3);
